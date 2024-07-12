@@ -3,6 +3,11 @@ variable "resource_group_name" {
     type = string
 }
 
+variable "storage_account_name" {
+    description = "The name of the storage account."
+    type = string
+}
+
 variable "location" {
     description = "The location/region where the storage account will be created."
     type = string
@@ -23,10 +28,6 @@ variable default_action {
     type = string
 }
 
-variable bypass {
-    description = "The bypass for network rules."
-    type = string
-}
 
 variable ip_rules {
     description = "The IP rules for network rules."
@@ -37,3 +38,23 @@ variable virtual_network_subnet_ids {
     description = "The virtual network subnet ids for network rules."
     type = list(string)
 }   
+
+variable "container_name" {
+    description = "The name of the storage container."
+    type = string
+}
+
+variable "container_access_type" {
+    description = "The access type for the storage container."
+    type = string
+}
+
+variable "blob_name" {
+    description = "The name of the storage blob."
+    type = string
+}
+
+variable "blob_type" {
+    description = "The type of the storage blob."
+    type = string
+}
