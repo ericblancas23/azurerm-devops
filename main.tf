@@ -16,6 +16,7 @@ module "storage_account" {
 
 module "vnet" {
   source = "./modules/vnet"
+  resource_group_name = var.resource_group_name
   vnet_name = var.vnet_name
   subnet1_name = var.subnet1_name
   subnet2_name = var.subnet2_name

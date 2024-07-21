@@ -1,5 +1,5 @@
 output "vnet_id" {
-  value = azurerm_virtual_network.example.id
+  value = azurerm_virtual_network.sample.id
 }
 
 output "subnet1_id" {
